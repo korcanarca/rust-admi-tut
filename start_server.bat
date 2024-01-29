@@ -11,11 +11,15 @@ RustDedicated.exe -batchmode -nographics -silent-crashes ^
 +rcon.port 28016 ^
 +rcon.password "tPHWMRHzlkNkRh" ^
 +app.port 28017 ^
-+server.identity "rsm" ^
++server.identity "default" ^
 +server.level "Procedural Map" ^
 +server.seed 3994544 ^
 +server.worldsize 3500 ^
--LogFile "server\rsm\server-log.log"
++server.tickrate 30 ^
++server.maxplayers 300 ^
++server.saveinterval 600 ^
++server.hostname "Admin Akademi Eğitim Sunucus"
+-LogFile "log/server-log.log"
 cls
 echo Restarting Server...
 TIMEOUT /T 30
